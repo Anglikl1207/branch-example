@@ -9,7 +9,7 @@ It's created for people who already have some knowledge of Git and GitHub. The c
 ## Setup
 Before you start, everyone in the group will need GitHub accounts.
 
-1. **Create Repo from Template**: One person in the group creates a repository baed on this one (click the Use Template button).
+1. **Create Repo from Template**: One person in the group creates a repository baed on this one (click the Use this Template button).
 2. **Add Collaborators**: everyone else in the group gives their Github usernames to the peron who created the repository. That person then can [add them a collaborators](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository) to the repository.
 
 
@@ -22,6 +22,8 @@ Before you start, everyone in the group will need GitHub accounts.
     - `git add jane.md`
     - `git commit -m "added file for jane"`
 7. **Switch back to the main branch:** after creating and committing the new file, switch to __main__. we do this because when you merge you merge another branch into the branch you're currently in. Since we want each person to merge their branch into the main branch, people should move to main before merging. 
+    - `git checkout main`
+    - note that we dont' add `-b` because that is only added when creating a new branch.
     - if you're using a visual tool, you may be able to merge without switching branches.
 9. **Merge person branch into Main:**  merge it into the __main__ branch. To merge the _jane_ branch we made earlier we would enter:
     - `git merge jane`
